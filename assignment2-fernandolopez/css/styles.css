@@ -1,0 +1,158 @@
+:root {
+    --hoverred: #84283F;
+    --darkblue: #002439;
+    --redt: #BD3A5A;
+    --offwhite: #F8FAFC;
+    --blue: #005A8F;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/* Universal styles */
+body {
+    background-color: var(--offwhite);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utility Styles */
+.flex-container {
+    display: flex;
+    gap: 2.125rem;
+}
+
+.inner-container {
+    max-width: 81.875rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+header ul {
+    align-items: center;
+    display: flex;
+    gap: 1.875rem;
+    font-size: 1.25rem;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+header ul a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+header .btn {
+    border: 0.125rem solid var(--redt);
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    background-color: var(--redt);
+    color: var(--white);
+}
+header .btn:hover,
+.btn:focus {
+        background-color: var(--hoverred);
+    color: var(--white);
+}
+.flex-container {
+    display: flex;
+    gap: 1rem;
+}
+.flex-container img {
+    width: calc((100% / 2) - (1rem / 2));
+}
+.bluebanner {
+    flex-direction: column;
+    display: flex;
+    padding: 5.0625rem 6.3125rem;
+    background-color: var(--blue);
+    color: var(--offwhite);
+}
+
+.bluebanner .flex-container {
+    align-items: center;
+    display: flex;
+}
+
+.bluebanner p {
+    font-size: 2.25rem;
+}
+
+.bluebanner a {
+    border: .0625rem solid var(--offwhite);
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--offwhite);
+    margin-top: 1.6875rem;
+    display: inline-block;
+    padding: 0.75rem 1rem;
+}
+
+
+.class-container {
+    padding: 1.6875rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main section {
+    background-color: var(--white);
+    margin-bottom: 3.375rem;
+}
+
+.main a {
+    padding-right: 1.6875rem;
+    color: var(--redt);
+}
+
+.main .flex-container div {
+    width: 31.1875rem;
+}
+
+.main .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 62.3125rem;
+    align-items: center;
+    text-align: center;
+    background-color: var(--white);
+    list-style-type: none;
+}
+
+
+footer{
+    background-color: var(--darkblue);
+    display: flex;
+    color: var(--offwhite);
+    padding: 3.375rem 11.8125rem;
+    font-size: 1rem;
+    gap: 2.125rem;
+}
+
